@@ -1,0 +1,19 @@
+{
+  "name": "first_code_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alastor279/first_code_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alastor279/first_code_node/issues"
+  },
+  "homepage": "https://github.com/Alastor279/first_code_node#readme",
+  "description": ""
+}
