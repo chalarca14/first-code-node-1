@@ -1,21 +1,24 @@
 {
   "name": "first_code_node",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "node ./main.js",
+    "start": "node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alastor279/first_code_node.git"
   },
-  "author": "",
+  "author": "Juan Carlos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alastor279/first_code_node/issues"
   },
   "homepage": "https://github.com/Alastor279/first_code_node#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
