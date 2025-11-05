@@ -2,11 +2,11 @@ import express from "express";
 const app = express();
 const PORT = 3000;
 import user from "./route/user.js";
-import product from "./route/product.js"
 
+app.use(express.json());
 
 app.use("/user", user);
-app.use("/product", product);
+
 
 
 app.listen(PORT,()=>{

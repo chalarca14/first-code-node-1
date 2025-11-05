@@ -4,8 +4,11 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --watch src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:estudio": "npx prisma studio",
+    "prisma:generate": "npx prisma generate",
+    "prisma:push": "npx prisma db push"
   },
   "repository": {
     "type": "git",
