@@ -17,7 +17,6 @@ route.post("/", (req, res)=>{
     });
 })
 
-
 route.delete("/", (req, res)=> {
     res.send({
         message: "eliminando un producto",
