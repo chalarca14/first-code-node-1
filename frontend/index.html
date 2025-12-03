@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola</title>
+</head>
+<body>
+  <h1>mostrar todos los usuarios</h1>
+  <pre id="output"></pre>
+  <script> 
+    fetch("http://localhost:3000/user")
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error("Error en la respuesta del backend");
+                }
+                return res.json(); // Convierte la respuesta a un objeto
+            })
+            .then(data => {
+                document.getElementById("output").textContent =
+                    JSON.stringify(data, null, 2); // Muestra el JSON en el pre convirtiendo el objeto creado arriba a un texto json
+            })
+            .catch(err => {
+                document.getElementById("output").textContent =
+                    "Error: " + err.message;
+            });
+  </script>
+
+</body>
+</html>
