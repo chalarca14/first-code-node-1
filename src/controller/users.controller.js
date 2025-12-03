@@ -10,7 +10,8 @@ export const createUser = async (req, res) => {
             email
         }
     })
-    res.startus(201).json(newUser);
+
+    res.status(201).json(newUser);
 }
 
 //get all users

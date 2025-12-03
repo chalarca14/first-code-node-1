@@ -1,11 +1,13 @@
 import express from "express";
+import user from "./route/user.js";
+import post from "./route/post.js";
 const app = express();
 const PORT = 3000;
-import user from "./route/user.js";
 
 app.use(express.json());
 
 app.use("/user", user);
+app.use("/posts", post);
 
 
 
